@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: blue;
+            color: yellow;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da mentira, ou melhor da maldição</p>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')//Vai perguntar o nome...
+        window.alert('É um grande prazer em te conhecer, ' + nome) //Concatenação
+        //(number + number) para adição
+        //(strubg + string) para concatenação
+        //window.prompt retorna um valor em string
+        /*para transformar em number, é necessário usar
+          Number.parseInt() para números inteiros
+          ou Number.parseFloat() para números float
+          e etc...*/
+        var n1 = parseFloat(window.prompt('Digite um número: '))
+        var n2 = parseFloat(window.prompt('Digite outro número: '))
+        window.alert(`A soma entre ${n1} e ${n2} é ${n1  + n2}`)
+    </script>
+
+</body>
+</html>

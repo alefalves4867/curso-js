@@ -1,0 +1,45 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+main{
+    margin: 30px;
+}
+h1{
+    padding: 10px;
+    color: white;
+}
+body{
+    font: normal 15pt Arial;
+}
+#sec1{
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.555);
+}
+header{
+    text-align: center;
+    
+
+}
+#hora, #saud{
+    text-align: center;
+}
+img{
+    border-radius: 100%;
+}
+#imagem{
+    text-align: center;
+    border-radius: 50%;
+}
+footer{
+    color:white;
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+}

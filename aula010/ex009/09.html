@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é Brasileiro?</title>
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Texte de Cidadania</h1>
+    <p><strong>Siga as orientações abaixo!</strong></p>
+
+    O País em que você nasceu: <input type="text" name="ps" id="ps">
+    
+    <input type="button" value="Verificar" onclick="calcular()">
+    <p><strong>Resultado</strong></p>
+
+    <div id="sn">
+
+    </div>
+
+    <script>
+        
+        function calcular() {
+        
+        var ps = window.document.querySelector("input#ps") //Coleta e deposita o valor de ps
+        var nac = ps.value //Coleta e deposita o valor de ps, que nesse caso é o valor txt IMPORTANTE FAZER!
+        var sn = window.document.body.querySelector('#sn') //'LINKA' O MET. INPUT COM A VAR SN
+        sn.innerHTML = `<p>Seu país de origem é <strong>${nac.toUpperCase()}</strong></p>` //DEPOSITA ESSE TEXTO NA DIV 'SN'
+        if (nac.toUpperCase() == "BRASIL"){
+            sn.innerHTML += `<p>Você é <strong>BRASILEIRO</strong></p>` //SOMA O VALOR ANTERIOR DA DIV + O NOVO
+        } else {
+            sn.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong></p>` //SOMA O VALOR ANTERIOR DA DIV + O NOVO
+        }
+    }
+    </script>
+</body>
+</html>

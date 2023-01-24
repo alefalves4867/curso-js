@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+            <div>
+                <p>Ano de Nascimento:
+                    <input type="number" name="nascimento" id="anoNasc">
+                </p>
+            </div>
+            <p>Sexo:
+                <input type="radio" name="ins" id="male" class="bol" checked> <!--checked faz com que a caixa fique marcada-->
+                <label for="male">Masculino</label> <!--Põe o nome MASCULINO em "male"-->
+                <input type="radio" name="ins" id="female" class="bol"><!--Coloca-se os nomes iguais para ligar um com o outro-->
+                <label for="female">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()" id="bt">
+            </p>
+        </div>
+        <div id="res">
+            <p>
+                Preencha os dados acima para ver o resultado!
+            </p>
+            
+        </div>
+        <div class="hel">
+                
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Alef Alves de Araujo</p>
+    </footer>
+    <script src="mente.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <main>
+        <p>Início: <input type="number" name="Inicio" id="inc" min="1"></p>
+        <p>Fim: <input type="number" name="Fim" id="fm"> </p>
+        <p>Passo: <input type="number" name="Passo" id="pss"></p>
+        <div id="bt">
+            <input type="button" name="bot" value="Contar" class="botao" onclick="cont()">
+        </div>
+        
+    </main>
+    <div id="res">
+        <p>Preparando a contagem...</p>
+    </div>
+    <footer>
+        <p>&copy; Alef A. Araujo</p>
+    </footer>
+    <script src="central.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Old Kingdom';
+    src: url('fonts/old_london/OldLondon.ttf') format('truetype');
+}
+body{
+    background-image: linear-gradient(to top, #0D0D0D, #1E1F23, #3F3E3C, #59595B);
+    background-attachment: fixed;
+    
+}
+section{
+    background-color: #AAA8AD;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 6px 6px 14px 4px rgba(0, 0, 0, 0.404);
+    font-size: 25px;
+}
+#anoNasc{
+    padding: 9px 10px;
+    
+}
+.bol{
+    width: 20px;
+    height: 25px;
+}
+input#bt{
+    font-size: 20px;
+}
+
+h1{
+    color: #AAA8AD;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: 'Old Kingdom';
+}
+footer{
+    color: #AAA8AD;
+    text-align: center;
+    font-style: oblique;
+    font-size: 25px;
+    font-family: 'Old Kingdom';
+}
+
+.hel{
+    text-align: center;
+    padding: 10px;
+
+}

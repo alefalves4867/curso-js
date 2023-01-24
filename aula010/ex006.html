@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evventos com DOM</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+<style>
+
+#area{
+    font: bold 20pt Arial;
+    background-color: darkgreen;
+    color:white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="area">
+
+        Interaja...
+
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        function clicar(){
+            a.innerText = "Clicou!"
+            a.style.background = "darkblue"
+        }
+        function entrou(){
+            a.innerText = "Entrou!"
+        }
+        function saiu(){
+            a.innerText = "Saiu!"
+            a.style.background = "darkgreen"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Kingdom';
+    src: url('fonts/old_london/OldLondon.ttf') format('truetype');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #AAA8AD;
+}
+header h1{
+    text-align: center;
+    font-size: 48px;
+}
+header{
+    padding: 45px 0px 15px 0px;
+    
+}
+main{
+    background-color: white;
+    width: 500px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+    margin: auto;
+    height: 200px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.473);
+    
+}
+main p{
+    padding: 5px;
+    font-size: 1.5em;
+}
+input{
+    height: 16px;
+}
+.botao{
+    height: 30px;
+    width: 87px;
+    font-size: 18px;
+}
+#bt{
+    padding-top: 15px;
+}
+#result{
+    font-size: 18px;
+    padding-top: 10px;
+    
+}
+#res > p{
+    text-indent: -4px;
+}
+footer p{
+    
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #3F3E3C;
+    font-style: italic;
+    width: 144px;
+    margin: auto;
+}
+footer p:hover{ 
+    color: #0D0D0D;
+    font-family: 'Kingdom';
+    font-size: 22px;
+    width: 144px;
+   
+}
+
+#res{
+    background-color: white;
+    width: 500px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.473);
+}
+#mas{
+    margin-top: 10px;
+}
