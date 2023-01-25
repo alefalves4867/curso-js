@@ -21,7 +21,7 @@ if (inc == fin || pass == fin){
         inc += pass
         if (inc <= fin){
         res.innerHTML += `${inc} &#128073;`
-        }
+        } 
             
     }
     res.innerHTML += `  &#x1F3C1;`
