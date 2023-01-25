@@ -16,8 +16,10 @@ if (inc == fin || pass == fin || pass == 0){
     while (inc <= fin) {
 
         inc += pass
+        if (inc <= fin){
         res.innerHTML += `${inc} &#128073;`
-    
+        }
+            
     }
     res.innerHTML += `  &#x1F3C1;`
 }
