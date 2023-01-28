@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <main>
+        <p>Número (entre 1 e 100):
+            <input type="number" name="num" id="num"><input type="button" value="Adicionar" onclick="adicionar()" id="bt">
+        </p>
+    </main>
+    <div id="res">
+        <select name="lista"
+        id="lista" size="10">
+        </select>
+        <input type="button" value="Finalizar" id="bt" onclick="finalizar()">
+        <div name="final" id="final">
+            
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; Alef A. Araujo</p>
+    </footer>
+    <script src="num.js"></script>
+</body>
+</html>
