@@ -17,6 +17,7 @@
             height: 100vh;
             width: 100vw;
             font-size: 1em;
+            background-color: snow;
         }
 
         main {
@@ -26,11 +27,37 @@
         }
 
         form {
-            height: 93vh;
+            height: 80vh;
             width: 100vw;
             display: grid;
             align-items: auto;
             justify-content: auto;
+            
+        }
+
+        #alfa {
+            background-image: linear-gradient(to left, white, darkgray);
+            padding: 20px;
+        }
+
+        #alfa > h1 {
+            text-align: center;
+            font-size: 2.5em;
+            display: block;
+            margin-top: -40px;
+            padding: 0px;
+        }
+
+        #alfa > p {
+            font-size: 1.5em;
+            padding: 10px;
+        }
+
+        #hello {
+            padding: 0px;
+            margin: 0px;
+            text-align: right;
+            display: block;
         }
 
         fieldset {
@@ -40,13 +67,10 @@
             align-self: center;
             justify-self: center;
             background-color: darkgray;
+            box-shadow: 4px 4px 4px 3px rgba(0, 0, 0, 0.3);
         }
 
-        legend {
-            background-image: linear-gradient(to bottom, gray, darkgray);
-            border: 2px solid darkgray;
-            font-size: 2em;
-        }
+
 
         fieldset > p > label{
             font-size: 1.3em;
@@ -76,11 +100,15 @@
 <body>
     <main>
         
-            <h1>Teste 1</h1>
-            <p>Por favor, siga as orientações abaixo:</p>
+            <div id="alfa">
+                <p id="hello">שלום עליכם</p>
+                <h1>Teste 1</h1>
+                <p>Por favor, siga as orientações abaixo:</p>
+                
+            </div>
             <form action="arrow_function.js">
                 <fieldset>
-                    <legend>Verificador</legend>
+      
                         <p>
                             <label for="inome">Digite o seu nome:</label>
                             <input type="text" name="nome" id="inome">
