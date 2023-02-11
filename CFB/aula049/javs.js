@@ -8,7 +8,7 @@ let atu=[]
 
 p_array.innerHTML = `[${elementos}]`
 
-btnVerificar;addEventListener('click', ((evt)=>{
+btnVerificar.addEventListener('click', ((evt)=>{
    resultado.innerHTML=elementos.reduce((anterior, atual, pos) => {
         ant.push(anterior)
         atu.push(atual)
