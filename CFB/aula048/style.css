@@ -1,0 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.caixa {
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.verde {
+    border-color: darkgreen !important;
+    background-color: darkgray !important;
+}
+
+.azul {
+    border-color: darkblue !important;
+    background-color: darkgray !important;
+}
+
+.vermelho {
+    border-color: darkred !important;
+    background-color: darkgray !important;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
