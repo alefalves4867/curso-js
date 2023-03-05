@@ -50,10 +50,9 @@ const instanciar = () => {
     div.setAttribute('class', 'carro')
     div.innerHTML = `Nome: ${e.nome}</br>`
     div.innerHTML += `Portas: ${e.portas}</br>`
-    if(f_tipos[0].checked === true){
-      div.innerHTML += `Blindagem: ${e.blindagem}</br>`
-      div.innerHTML += `Municao: ${e.municao}`
-    }
+
+    div.innerHTML += `Blindagem: ${e.blindagem}</br>`
+    div.innerHTML += `Municao: ${e.municao}`
     carros.appendChild(div)
   })
 }
