@@ -9,6 +9,11 @@ const f_municao = document.querySelector('#f_municao')
 let c_array = []
 
 
+
+const remover_do_array = () =>{ 
+  c_array
+}
+
 f_tipos[0].addEventListener('click', ()=>{
     f_nome.value = ''
     f_portas.value = 0
@@ -45,14 +50,26 @@ btn.addEventListener('click', ()=>{
 
 const instanciar = () => {
   carros.innerHTML = ''
-  c_array.map((e)=>{
+  c_array.map((e, i)=>{
+    console.log(i)
+    console.log('-----------')
     const div = document.createElement('div')
+    const btn = document.createElement('input')
+    btn.type = 'button'
+    btn.setAttribute('value', 'remover')
+    btn.style = 'cursor: pointer;'
+    btn.addEventListener('click', (evt)=>{
+      console.log(i)
+      c_array.splice(i, 1) // HERE THE QUESTION 
+      instanciar(); //É necessario o retorno para a função instanciar(), pois anteriormente já foi deletado do c_array o elemento clickado, então, foi pedido (quando instanciar() foi acionado) que apagasse todoas as divs adicionadas no carro e reescrevesse cada um dos objetos incluidos no c_array em uma nova div
+    })
     div.setAttribute('class', 'carro')
     div.innerHTML = `Nome: ${e.nome}</br>`
     div.innerHTML += `Portas: ${e.portas}</br>`
 
     div.innerHTML += `Blindagem: ${e.blindagem}</br>`
     div.innerHTML += `Municao: ${e.municao}`
+    div.appendChild(btn)
     carros.appendChild(div)
   })
 }
